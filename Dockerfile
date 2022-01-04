@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 
 COPY Gemfile just-the-docs.gemspec ./
 ENV BUNDLER_VERSION='2.1.4'
-RUN gem install bundler --no-document -v '2.1.4' && bundle _2.1.4_ install
+RUN gem install bundler --no-document -v '2.1.4' && bundle BUNDLER_VERSION install
 
 EXPOSE 4000
 
